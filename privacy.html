@@ -12,7 +12,7 @@
 <header><a class="brand" href="./">ORVYQ</a><nav><a href="./">Home</a><a href="privacy.html">Privacy</a></nav></header>
 
 <h1>Privacy policy</h1>
-<p class="muted">Effective 9 October 2026. Applies to the ORVYQ upload tool (Google Cloud project
+<p class="muted">Effective 9 October 2026 (updated the same day to add read-only YouTube Analytics). Applies to the ORVYQ upload tool (Google Cloud project
 <code>orvyq-automation</code>) and to this website.</p>
 
 <h2>Who uses the tool</h2>
@@ -25,9 +25,11 @@ public service, and it does not collect information about other people, viewers 
 <tr><td><code>youtube.upload</code></td><td>Uploading the channel's own videos and setting their custom thumbnails.</td></tr>
 <tr><td><code>youtube.readonly</code></td><td>Reading the connected channel's ID, name and handle, so that videos only go to the ORVYQ channel; reading back an uploaded video's status, title, description and thumbnail to check that it was saved correctly.</td></tr>
 <tr><td><code>youtube.force-ssl</code></td><td>Editing the description of a video the channel has already uploaded. Although this permission also allows deleting videos, the tool has no delete function, and nothing is deleted without the channel owner's separate, explicit approval.</td></tr>
+<tr><td><code>yt-analytics.readonly</code></td><td>Reading the channel's own aggregated performance reports for its public videos (views, watch time, average view duration and percentage, audience retention by moment in the video, likes, comments, shares, subscribers gained and lost, traffic sources, top countries, and age/gender percentages) to write short reports 24 hours, 72 hours and 7 days after publication, which help plan the next videos.</td></tr>
 </table>
-<p>The tool does not read comments, messages, viewer or subscriber data, analytics, revenue, or any other Google account
-data.</p>
+<p>Analytics data is aggregated by YouTube; it does not identify individual viewers, and the tool does not request
+it per person. The tool does not read comment text, messages, the subscriber list, revenue, or any other Google
+account data.</p>
 
 <h2>What is stored, and where</h2>
 <ul>
@@ -38,6 +40,8 @@ call the YouTube Data API on the owner's behalf.</li>
 <li><strong>Upload records</strong>: for each upload or edit, the video ID and link, the title, tags, settings, the
 time, and checksums of the uploaded files. These are kept on the owner's computer as production records. They never
 contain sign-in tokens.</li>
+<li><strong>Performance reports</strong>: the aggregated analytics figures listed above for each public video, kept on
+the owner's computer to compare videos over time.</li>
 </ul>
 
 <h2>Sharing</h2>
