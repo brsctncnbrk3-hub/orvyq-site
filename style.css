@@ -1,0 +1,16 @@
+:root{--bg:#0d0c0a;--fg:#ece6d8;--muted:#a69f90;--gold:#f2b544;--line:#2c2820}
+@media (prefers-color-scheme: light){:root{--bg:#faf7f0;--fg:#1d1b17;--muted:#5d574c;--gold:#9a6a0a;--line:#e3dccd}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 Georgia,"Times New Roman",serif}
+main{max-width:720px;margin:0 auto;padding:40px 16px 64px}
+header{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:28px}
+.brand{letter-spacing:.25em;font-weight:700;color:var(--fg);text-decoration:none}
+nav a{color:var(--muted);margin-left:16px;font-family:ui-monospace,Menlo,monospace;font-size:14px}
+h1{font-size:32px;line-height:1.2;margin:0 0 12px}
+h2{font-size:20px;margin:32px 0 8px;color:var(--gold)}
+a{color:var(--gold)}
+.muted{color:var(--muted);font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border-top:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+code{font-family:ui-monospace,Menlo,monospace;font-size:14px}
+footer{margin-top:48px;border-top:1px solid var(--line);padding-top:12px}
